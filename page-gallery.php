@@ -32,12 +32,13 @@ get_header(); ?>
 		while ($events_query->have_posts()) : $events_query->the_post();
 			$date = get_post_meta(get_the_ID(), 'event_date', true);
 			$date = new DateTime($date);
+			$date = get_field('event_date_general') ? get_field('event_date_general') : $date->format('F j, Y');
 			?>
 
 			<div class="galleryRow">
 				<div class="galleryTitle"><?php the_title(); ?></div>
-				<div class="gallerySubtitle"><?php echo $date->format('F j, Y'); ?></div>
-				<div class="galleryTagline"></div>
+				<div class="gallerySubtitle"><?php echo $date;  ?></div>
+				<div class="galleryTagline"><?php get_field('subtitle'); ?></div>
 				<div class="soireeGallery clearfix">
 
 					<?php
