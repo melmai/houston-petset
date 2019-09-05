@@ -64,6 +64,7 @@ if ($featured_img_url) : ?>
                             foreach ($years as $year) {
                                 $news_query = new WP_Query(array(
                                     'post_type' => 'article',
+                                    'posts_per_page' => -1,
                                     'tax_query' => array(array(
                                         'taxonomy' => 'pub_dates',
                                         'field' => 'slug',
@@ -73,21 +74,21 @@ if ($featured_img_url) : ?>
 
                                 <!-- START NEWS PANEL -->
                                 <div class="panel panel-default">
-                                    <div class="panel-heading" role="tab" id="headingZero<?php echo $current_year; ?>">
+                                    <div class="panel-heading" role="tab" id="headingZero<?php echo $year; ?>">
                                         <h4 class="panel-title">
-                                            <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseZero<?php echo $current_year; ?>" aria-expanded="true" aria-controls="collapseZero<?php echo $current_year; ?>">
+                                            <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseZero<?php echo $year; ?>" aria-expanded="true" aria-controls="collapseZero<?php echo $year; ?>">
                                                 <?php echo $year; ?>
                                             </a>
                                         </h4>
                                     </div>
-                                    <div id="collapseZero<?php echo $current_year; ?>" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingZero<?php echo $current_year; ?>">
+                                    <div id="collapseZero<?php echo $year; ?>" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingZero<?php echo $year; ?>">
                                         <div class="panel-body">
                                             <div class="directorsContainer clearfix">
-                                                <ul class="directorList">'
+                                                <ul class="directorList">
 
                                                     <!-- START ARTICLE -->
                                                     <?php while ($news_query->have_posts()) : $news_query->the_post(); ?>
-                                                        <?php $featured_img = get_the_post_thumbnail_url(get_the_ID(), 'thumbnail'); ?>
+                                                        <?php $featured_img = get_the_post_thumbnail_url(get_the_ID(), 'medium'); ?>
 
                                                         <li class="directorItemHolder">
                                                             <div class="directorItemBox">
