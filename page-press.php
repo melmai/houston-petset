@@ -87,7 +87,7 @@ if ($featured_img_url) : ?>
 
                                                     <!-- START ARTICLE -->
                                                     <?php while ($news_query->have_posts()) : $news_query->the_post(); ?>
-                                                        <?php $featured_img = get_the_post_thumbnail_url(get_the_ID(), 'full'); ?>
+                                                        <?php $featured_img = get_the_post_thumbnail_url(get_the_ID(), 'thumbnail'); ?>
 
                                                         <li class="directorItemHolder">
                                                             <div class="directorItemBox">

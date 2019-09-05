@@ -1181,6 +1181,38 @@ li.grantList-item {
      color: #fff;
  }
 
+.title-bar {
+	background: #ff5b34;
+}
+.title-bar h1{
+	color: #ffffff;
+    text-align: center;
+    font-family: Lato;
+    font-weight: 300;
+    font-style: normal;
+}
+.soireeTitle.title-bar {
+	max-width: 100%;
+}
+.blog .pagination {
+    margin-left: 0;
+	margin-right: 0;
+}
+.pagination .prev:before {
+    content: "<";
+	font-weight: bold;
+    font-size: 22px;
+}
+.pagination .next:before {
+    content: ">";
+	font-weight: bold;
+    font-size: 22px;
+}
+.blog article.post:first-of-type {
+	width: 100%;
+    height: 550px;
+}
+
 /* Single */
 
 .single .pageTopTitle {
