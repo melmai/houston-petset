@@ -613,6 +613,7 @@ li.directorItemHolder {
     float: left;
     width: 25%;
     text-align: center;
+    margin-top:20px;
 }
 
 .page-template-page-press li.directorItemHolder {
@@ -628,7 +629,6 @@ li.directorItemHolder {
     text-align: left;
     max-width: 160px;
     height: 260px;
-    margin-bottom: 30px;
 }
 
 .directorName {
@@ -644,10 +644,25 @@ li.directorItemHolder {
     font-family: "Open Sans";
     font-size: 12px;
     font-weight: 400;
+    margin-bottom:20px;
 }
 
 .directorPortrait {
-    margin-bottom: 10px;
+    margin-bottom: 20px;
+    height: 200px;
+    width: 200px;
+    position: relative;
+    overflow: hidden;
+    background-color: #000;
+}
+
+.directorPortrait > img {
+    position: absolute;
+    top: -9999px;
+    left: -9999px;
+    right: -9999px;
+    bottom: -9999px;
+    margin: auto;
 }
 
 .directorPortrait:hover {
