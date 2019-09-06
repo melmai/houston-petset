@@ -606,6 +606,8 @@ li.menu-item.current-menu-parent ul.sub-menu {
 
 ul.directorList {
     list-style: none;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 li.directorItemHolder {
@@ -627,7 +629,7 @@ li.directorItemHolder {
 .directorItemBox {
     display: inline-block;
     text-align: left;
-    max-width: 160px;
+    max-width: 200px;
     height: 260px;
 }
 
