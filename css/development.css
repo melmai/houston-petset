@@ -1225,9 +1225,56 @@ li.grantList-item {
 	font-weight: bold;
     font-size: 22px;
 }
-.blog article.post:first-of-type {
+.blog .first-post article.post {
 	width: 100%;
     height: 550px;
+	margin-bottom: 85px;
+}
+.blog.paged .first-post {
+	display: none;
+}
+.paged .soireeTitle.title-bar {
+	margin-bottom: 85px;
+}
+h2.blog-subtitle {
+	font-weight: 600 !important;
+    color: #898d9d;
+    margin-bottom: 60px;
+}
+.pagination .prev:hover, .pagination .prev:focus, .pagination .next:hover, .pagination .next:focus {
+    background-color: #ff5b34;
+    color: #fff;
+}
+.first-post .post {
+    justify-content: flex-start;
+    align-items: flex-end;
+}
+.first-post .post-banner {
+    margin-bottom: 50px;
+    background-color: #54585a;
+    padding: 25px 25px 25px 75px;
+}
+.first-post .post-banner .entry-title {
+    font-weight: 600;
+}
+.first-post .pipe {
+	color: #ff5b34;
+}
+.pipe {
+	margin: 0 10px;
+}
+.blog .first-post .entry-title a:hover, .blog .first-post .entry-title a:focus {
+    color: #ff5b34;
+}
+.blog .entry-title a:hover, .blog .entry-title a:focus {
+    color: #fff;
+}
+.read-link {
+	float: right;
+    margin-right: 20px;
+}
+.post-banner-meta a.read-link {
+	color: #fbcd6a;
 }
 
 /* Single */
