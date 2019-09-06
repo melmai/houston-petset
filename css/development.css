@@ -354,6 +354,50 @@ li.menu-item.current-menu-parent ul.sub-menu {
  *            Components 		   *
  * ############################### */
 
+/* MailChimp Newsletter Block */
+.mailchimp-container .uppercase.white-text {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+}
+
+.mailchimp-container .mc4wp-form-fields {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 650px;
+    margin: auto;
+}
+
+.mailchimp-container .mc4wp-form-fields > p {
+    margin: 0;
+}
+
+.mailchimp-container .mc4wp-form-fields label {
+    display: none;
+}
+
+.mailchimp-container .mc4wp-form-fields input[type="submit"] {
+    width: 100%;
+}
+
+@media screen and (min-width: 500px) {
+    .mailchimp-container.mc4wp-form-fields > p {
+        margin: 0 auto 1.5em;
+    }
+
+    .mailchimp-container .mc4wp-form-fields p:first-child {
+        flex-grow: 3;
+    }
+
+    .mailchimp-container .mc4wp-form-fields {
+        flex-direction: row;
+    }
+
+    .mailchimp-container .mc4wp-form-fields input[type="submit"] {
+        min-width: 200px;
+    }
+}
+
 
 /* ############################### *
  *            Home Page 		   *
@@ -453,12 +497,14 @@ li.menu-item.current-menu-parent ul.sub-menu {
 	border-top: none;
 } 
 
-.home .button > a, .home .button > button {
+.home .button > a, 
+.home .button > button {
 	padding: 5px 40px !important;
 	font-size: 1.1em !important;
 	min-width: 200px;
 	text-align: center;
 }
+
 
 /* About Page */
 
