@@ -443,6 +443,12 @@ li.menu-item.current-menu-parent ul.sub-menu {
  * ############################### */
 
 /* Newsletter Text */
+.mailchimp-container {
+    background-color: #ff5b34;
+    padding: 50px 0;
+    margin-top: 50px; 
+}
+
 .mailchimp-container .uppercase.white-text {
     font-size: 1.5em;
     margin-bottom: 20px;
@@ -1619,10 +1625,17 @@ h2.blog-subtitle {
 	background-color: white;
     color: black;
     padding: 35px 0px;
-    border-top: 150px solid #ff5b34;
+    /* border-top: 150px solid #ff5b34; */
 }
 @media screen and (min-width: 768px) {
+    .mainFooter {
+        display: flex;
+        align-items: center;
+    }
+
 	#mainFooter {
+        display: flex;
+        align-items: center;
         padding-bottom: 85px;
     }
 }
