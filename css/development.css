@@ -848,6 +848,47 @@ li.advisoryItemHolder {
 }
 
 /* ############################### *
+ *         News/Media Page 		   *
+ * ############################### */
+
+ .video-grid .vc_gitem_row .vc_gitem-col {
+    padding: 0;
+ }
+
+ .video-grid .vc_grid-item {
+     width: 100%;
+ }
+
+ .video-grid .vc_pageable-slide-wrapper:before, 
+ .video-grid .vc_pageable-slide-wrapper:after {
+     display:none !important;
+ }
+
+ @media screen and (max-width: 1024px) {
+    .news-wrapper .vc_custom_1567825357894 {
+        padding-left: 0 !important;
+    }
+ }
+
+ .news-wrapper .vc_custom_1567825357894:before {
+     display: none;
+ }
+
+ .vc_grid.vc_row.vc_grid-gutter-30px .vc_pageable-slide-wrapper {
+     margin-right: 0 !important;
+ }
+
+ @media screen and (min-width: 600px) {
+     .video-grid .vc_grid-item {
+         width: 50%;
+     }
+ }
+
+ .video-grid h4 {
+     margin-top: 10px;
+ }
+
+/* ############################### *
  *           Contact Page 		   *
  * ############################### */
 
