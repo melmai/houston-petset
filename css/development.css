@@ -348,6 +348,12 @@ li.menu-item:hover ul.sub-menu {
     z-index: 3;
 }
 
+/* Mobile Menu */
+#menu-mobile-menu {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
 /* ############################### *
  *           Nav Submenus  	  	   *
  * ############################### */
